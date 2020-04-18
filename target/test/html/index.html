@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Tests for @superflycss/component-main</title>
+  <link href="../css/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+</head>
+
+
+<body class="Body">
+
+    
+  <header class="Header--column">
+    <h1 class="Display--fs400fw700">Component Main</h1>
+    <a class="Header_link" href="https://github.com/superflycss/component-main/">Github</a>
+  </header>
+
+
+    <!-- START TEST -->
+
+
+  <div class="TestHeader ">
+    <span class="TestCounter"></span>
+    <span class="TestComponent">Main</span>
+  </div>
+  <div class="TestContainer">
+    <div class="TestInput">
+      <div class="TestWhen "></div>
+      <div class="TestDescription ">
+<code class="u-text-color-md-pink-400">Main</code> is the container.
+</div>
+      <pre class="TestMarkup ">        <code class="html">         
+
+<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"Main"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    Nam perferendis inventore iure praesentium, vel, ea
+    molestias voluptatibus suscipit rerum incidunt
+    culpa expedita ex. Delectus aut non explicabo ducimus quibusdam
+    labore?
+   <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Accusantium quam exercitationem non eius, ea mollitia
+    modi hic culpa illo sunt ut beatae quas sed,
+    dolorem quis aut nam unde cupiditate.
+   <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+
+       </code>
+     </pre>
+     </div>
+    <!--END TEST INPUT-->
+     <div class="TestOutput">
+      <div class="TestThen "></div>
+      <div class="TestDescription">Elements are centered horizontally in the parent container.</div>
+     <div class="TestRender">
+
+<main class="Main">
+    <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    Nam perferendis inventore iure praesentium, vel, ea
+    molestias voluptatibus suscipit rerum incidunt
+    culpa expedita ex. Delectus aut non explicabo ducimus quibusdam
+    labore?
+   </p>
+   <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Accusantium quam exercitationem non eius, ea mollitia
+    modi hic culpa illo sunt ut beatae quas sed,
+    dolorem quis aut nam unde cupiditate.
+   </p>
+</main>
+
+      </div>      
+    </div>
+  </div>
+
+
+
+</body></html>

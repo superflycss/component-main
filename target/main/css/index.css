@@ -1,0 +1,45 @@
+/*! | superflycss/component-link |
+    | MIT License                |
+    | https://github.com/superflycss/component-link/blob/master/LICENSE.md */
+
+/*! superflycss/variables-dimension | MIT License | https://github.com/superflycss/variables-dimension/blob/master/LICENSE.md */
+
+/*! bootstrap v4.0.0-alpha | MIT License | https://github.com/twbs/bootstrap/blob/master/LICENSE */
+
+/*
+=======================================
+ DIMENSION VARIABLES
+=======================================
+ 0:  Spacers.
+ 1:  Borders.
+ 2:  Z-Index
+ 3:  Default Media Breakpoints
+ 4:  Variable Breapoint Definitions
+================================
+*/
+
+/* 0 */
+
+/* 1 */
+
+/* 2 */
+
+/* 3 */
+
+/* 4 */
+
+.Main {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;  
+    height: 100vh;
+    max-width: 768px;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .Main {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+  }

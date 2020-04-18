@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+{% import "@superflycss/component-test/TestHead.njk" as TestHead %}
+{% import "@superflycss/component-test/TestHeader.njk" as TestHeader %}
+{% import "@superflycss/component-test/TestTemplate.njk" as Test %}
+
+{{ TestHead.component( 'main' ) }}
+
+<body class="Body">
+
+    {{ TestHeader.component( 'main' ) }}
+
+    <!-- START TEST -->
+{% set when %}
+<code class="u-text-color-md-pink-400">Main</code> is the container.
+{% endset %}
+{% call Test.component( 'Main', when, 'Elements are centered horizontally in the parent container.' ) %}
+<main class="Main">
+    <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    Nam perferendis inventore iure praesentium, vel, ea
+    molestias voluptatibus suscipit rerum incidunt
+    culpa expedita ex. Delectus aut non explicabo ducimus quibusdam
+    labore?
+   </p>
+   <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Accusantium quam exercitationem non eius, ea mollitia
+    modi hic culpa illo sunt ut beatae quas sed,
+    dolorem quis aut nam unde cupiditate.
+   </p>
+</main>
+{% endcall %}
+</body>
+
+</html>

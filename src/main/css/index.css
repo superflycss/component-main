@@ -1,0 +1,28 @@
+/*! | superflycss/component-link |
+    | MIT License                |
+    | https://github.com/superflycss/component-link/blob/master/LICENSE.md */
+
+@import "@superflycss/variables-dimension";
+
+:root {
+    --Main-max-width: var(--md);
+    --Main-margin-top: 2rem;
+    --Main-margin-left: 2rem;
+    --Main-margin-right: 2rem;
+}
+
+.Main {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;  
+    height: 100vh;
+    max-width: var(--Main-max-width);
+    margin-top: var(--Main-margin-top);
+}
+
+@media (--md-max-viewport) {
+    .Main {
+        margin-left: var(--Main-margin-left);
+        margin-right: var(--Main-margin-right);
+    }
+  }
